@@ -16,8 +16,20 @@
 .try-browser{background:#182338;border:1px solid #33415a;border-radius:15px;overflow:hidden;box-shadow:0 35px 70px #18233833}
 .try-bar{height:44px;display:flex;align-items:center;gap:14px;padding:0 15px;border-bottom:1px solid #2b3950;color:#7f8da5;font-size:11px;letter-spacing:.4px}
 .try-browser a{display:block;line-height:0}
-.try-browser img{display:block;width:100%;height:auto}
 .button:focus-visible,.nav-cta:focus-visible,.try-browser a:focus-visible{outline:3px solid #a99aff;outline-offset:3px}
 .footer-inner>span a{color:#a99aff;font-size:11px}
 @media(max-width:850px){.try-grid{grid-template-columns:1fr;gap:45px}.try-browser{max-width:620px}}
 @media(max-width:640px){.try-lead{font-size:14px}}
+
+/* Hard-coded login preview (no image needed) */
+.try-browser a.mock-login{display:block;line-height:1.4;background:#101218;padding:30px 30px 34px;color:#fff;transition:background .2s}
+.try-browser a.mock-login:hover{background:#12151d}
+.ml-brand{font:700 18px "DM Sans",sans-serif;margin:0 0 18px;display:flex;align-items:center;gap:9px}
+.ml-card{background:#1c2030;border:1px solid #2a3042;border-radius:16px;padding:22px}
+.ml-title{font:700 17px "DM Sans",sans-serif;margin-bottom:20px}
+.ml-label{font:600 12px "DM Sans",sans-serif;margin-bottom:8px}
+.ml-input{background:#101218;border:1px solid #2a3042;border-radius:10px;padding:13px 14px;color:#5d6578;font-size:14px;margin-bottom:16px}
+.ml-enter{display:inline-block;background:#5046e5;color:#fff;font:700 14px "DM Sans",sans-serif;padding:12px 24px;border-radius:12px;margin-bottom:18px;transition:background .2s}
+.mock-login:hover .ml-enter{background:#6157f0}
+.ml-help{font-size:12px;color:#8f98ad;line-height:1.5}
+@media(max-width:640px){.try-browser a.mock-login{padding:20px 16px 22px}.ml-card{padding:16px}}
